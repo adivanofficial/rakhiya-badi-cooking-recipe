@@ -3,86 +3,91 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rakhiya Badi - How to Cook</title>
+<title>Rakhiya Badi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
-body{
-  margin:0;
-  font-family: Arial, sans-serif;
-  background:#fff8e1;
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fffaf2;
 }
 
-header{
-  background:#c62828;
-  color:white;
-  padding:15px;
-  text-align:center;
-  font-size:22px;
-  font-weight:bold;
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+nav h2 {
+  color: #b22222;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
 
-.hero{
-  padding:20px;
-  text-align:center;
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(to right, #fff3d6, #ffe0a3);
+}
+.hero-text h1 {
+  font-size: 42px;
+}
+.hero-text span {
+  color: red;
+}
+.hero-text p {
+  font-size: 18px;
+}
+.hero img {
+  width: 300px;
+  border-radius: 20px;
 }
 
-.hero h1{
-  color:#b71c1c;
-  font-size:32px;
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #ff9800;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
 }
 
-.hero p{
-  color:#444;
+/* Steps */
+.steps {
+  padding: 20px;
+}
+.step {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 15px 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.step img {
+  width: 80px;
 }
 
-.section-title{
-  text-align:center;
-  background:#ffcc80;
-  padding:10px;
-  margin:20px;
-  border-radius:10px;
-  font-weight:bold;
-}
-
-.step{
-  display:flex;
-  align-items:center;
-  background:white;
-  margin:15px;
-  padding:15px;
-  border-radius:15px;
-  box-shadow:0 2px 8px rgba(0,0,0,0.1);
-}
-
-.step img{
-  width:80px;
-  margin-right:15px;
-}
-
-.step-number{
-  background:red;
-  color:white;
-  border-radius:50%;
-  width:30px;
-  height:30px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin-right:10px;
-}
-
-.tips{
-  background:#fff3cd;
-  padding:15px;
-  margin:20px;
-  border-radius:10px;
-}
-
-footer{
-  background:#c62828;
-  color:white;
-  text-align:center;
-  padding:10px;
+/* Footer */
+footer {
+  text-align: center;
+  background: #b22222;
+  color: white;
+  padding: 15px;
 }
 </style>
 
@@ -90,63 +95,67 @@ footer{
 
 <body>
 
-<header>
-Rakhiya Badi
-</header>
+<!-- Navbar -->
+<nav>
+  <h2>Rakhiya Badi</h2>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Recipes</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
 
-<div class="hero">
-<h1>How to Cook Rakhiya Badi</h1>
-<p>Ready in 5 minutes | Easy & Tasty Recipe</p>
-</div>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>How to Cook <span>Rakhiya Badi</span></h1>
+    <p>Ready in 5 Minutes | Easy & Tasty Recipe</p>
+    <a href="#" class="btn">Step-by-Step Recipe</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1604908811643-4fef0b2d2c62" alt="Food">
+</section>
 
-<div class="section-title">
-Step-by-Step Recipe
+<!-- Steps -->
+<section class="steps">
+
+<div class="step">
+  <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png">
+  <div>
+    <h3>1. Heat Oil</h3>
+    <p>Heat 1–2 tsp oil in a pan.</p>
+  </div>
 </div>
 
 <div class="step">
-<div class="step-number">1</div>
-<img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png">
-<div>
-<h3>Heat Oil</h3>
-<p>Heat 1–2 tsp oil in a pan</p>
-</div>
-</div>
-
-<div class="step">
-<div class="step-number">2</div>
-<img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png">
-<div>
-<h3>Add Onion & Spices</h3>
-<p>Fry 1 onion, 1 tomato and spices until golden brown</p>
-</div>
+  <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png">
+  <div>
+    <h3>2. Add Onion & Spices</h3>
+    <p>Fry onion, tomato & spices till golden.</p>
+  </div>
 </div>
 
 <div class="step">
-<div class="step-number">3</div>
-<img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png">
-<div>
-<h3>Add Badi & Water</h3>
-<p>Add Rakhiya Badi and ½ cup water. Cover and cook for 3–5 minutes</p>
-</div>
+  <img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png">
+  <div>
+    <h3>3. Add Badi & Water</h3>
+    <p>Add badi + water and cook for 5 min.</p>
+  </div>
 </div>
 
 <div class="step">
-<div class="step-number">4</div>
-<img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png">
-<div>
-<h3>Serve</h3>
-<p>Serve hot with roti or rice</p>
-</div>
-</div>
-
-<div class="tips">
-<h3>Tips</h3>
-<p>✔ Add masala for extra taste</p>
-<p>✔ Do not overcook</p>
+  <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png">
+  <div>
+    <h3>4. Serve</h3>
+    <p>Serve hot with roti or rice.</p>
+  </div>
 </div>
 
+</section>
+
+<!-- Footer -->
 <footer>
-Thank you for choosing Rakhiya Badi ❤️
+  Thank you for choosing Rakhiya Badi ❤️
 </footer>
 
 </body>
